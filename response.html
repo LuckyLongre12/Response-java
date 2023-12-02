@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Page title</title>
+    <script src="https://kit.fontawesome.com/22cfd4c9fb.js" crossorigin="anonymous"></script>
+</head>
+<style>
+*{
+    margin: 0;
+    box-sizing: padding-box;
+}
+body {
+    background: black;
+}
+nav{
+    background-color: #00c4d68a;
+    width: 100%;
+}
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    height: 70px;
+}
+li{
+    display: flex;
+    align-items: center;
+}
+li:hover{
+     background-color: #2a2e2a10; 
+}
+
+
+a{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+li:first-child{
+    margin-right: auto;
+}
+
+
+.second-nav{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    right: -1000px;   
+    background: #00c4d68a;
+    height: 400px;
+    transition: 0.3s;
+    z-index: 1;
+}
+
+.second-nav li{
+    display: flex;
+    margin: 20px; 
+}
+a{
+    font-size: 3rem;
+}
+.qwe:first-child{
+    margin-left: -20px;
+}
+/* @media(max-width:800px){
+    .a1{
+        display: none;
+    }
+    #icon1{
+        opacity: 1;
+    }
+} */
+
+
+
+
+
+
+
+
+
+    .container{
+        width: 800px;
+        height: 800px;
+        display: flex;
+        justify-content: center;        
+        background: #7d2ae8;
+        align-items: center;
+        border-radius: 12px;
+        margin-left: 6rem;
+        margin-top: 10rem;
+    }
+    .card{
+        width: 400px;
+        height: 450px;
+        background: white;   
+        border-radius: 20px; 
+        padding: 10px; 
+    }
+    .card-info{     
+        border-radius: 40px;
+    }
+    .input{
+        margin-left: 20px;
+        border-radius: 32px;
+        border-color: red;
+        width: 360px;
+        margin-top: 2.2rem;
+        outline: none;
+        font-size: 30px;
+        color: white;
+        background: black;
+        margin-bottom: 5px;
+        text-align: center;
+        height: 2rem;
+        border-width: 5px;
+        
+    }
+    h1{
+        font-size: 2.2rem;
+        text-align: center;
+        font-weight: bolder;
+        color: green;
+    }
+    ::placeholder{
+        font-size: 20px;
+        text-align: center;
+        color: #aeb300a6;
+    }
+    button{
+        border-radius: 7px;
+        outline: none;
+        font-size: 30px;
+        color: white;
+        background:#7d2ae8 ;
+        margin-left: 100px;
+       
+    }
+    img{
+        width: 200px;
+        height: 200px;
+        margin-left: 100px;
+        filter: blur(8px);
+        margin-top: 20px;
+    }
+    .card2{
+        width: 400px;
+        height: 400px;
+        background: white;   
+        border-radius: 20px;
+        margin-left: 18rem;
+        margin-top: -38rem;
+        display: none;
+    }
+    h4{
+        font-size: 30px;
+        text-align: center;
+        font-weight: bold;
+    }
+    .card,.card2{
+        transform: scale(1.53);
+        transition: 0.8s;
+    }
+    #nxt{
+        margin-top: 180px;
+        margin-left: 100px;
+        position: absolute;
+        transition: 0.5s;
+    }
+    #show-btn{
+        margin-left: 30px;
+        margin-top: 80px;
+        margin-right: 80px;
+        position: static ;
+    }
+    #login{
+      margin-left: 10px;
+    }
+    #card3{
+        width: 500px;
+        height: 500px;
+        background: #e90a00d7;
+        margin-left: 15rem;
+        margin-top: -40rem;
+        border-radius: 30px;
+      
+        
+    }
+    .last-txt{
+        text-align: center;
+        font-size: 5rem;
+        color: #1523ff;
+        padding-top: 8rem;
+    }
+  .card3-col{
+      display: none;
+  }
+ .last-btn{
+     margin-left: 160px;
+     font-size: 4rem
+ }
+ input[type=checkbox]{
+     position: absolute;
+     left: 25px;
+     top: 220px;
+     height: 30px;
+     width: 30px;
+ }
+ b{
+     font-size: 25px;
+     margin-left: 50px;     
+ }
+    .custom{
+        width: 200px;
+        height: 50px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: -1000px;
+        transition: 0.4s;
+        margin-left: 94px;
+    }
+    .otp-box{
+        width: 50px;
+        height: 50px;
+        background: red;
+        border-radius: 10px;
+        color:white;
+        font-weight: bolder;
+        font-size: 50px;
+        text-align: center;
+        outline: none;
+        margin-left: 10px;
+    }
+    
+    .OTP-BOX{
+        width: 550px;
+        height: 100px;
+        background: blue;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        color: red;
+        font-size: 50px;
+        border-radius: 10px;
+        position: absolute;
+        top: 40px;
+        left: 200px;
+        margin-top: -1000px;
+        transition: 2s;
+        text-align: center;
+        
+    }
+  #close{
+      background: #baff55b8;
+      border-color: white;
+      border-width: 0;
+      color: black;
+      font-size: 45px;
+      font-weight: bold;
+      position: absolute;
+      border-radius: 60%;
+      top: 20px;
+      left: 620px;
+      outline: red;
+      margin-top: -1000px;
+      transition: 2s;
+  }
+ #submit{
+     position: absolute;
+     left: 150px;
+     top: 890px;
+     display: none;
+     transform: scale(1.53);
+ }
+ 
+
+</style>
+<body>
+        <nav>
+    <ul>
+ <li><a href="#" onclick="home()">LuckyGoCode</a></li>
+ <li><a href="#"><i id="icon1" onclick="hide()" class="fa fa-bars"></i>
+</span></a></li>
+    </ul>
+</nav>    
+<nav class="nav2">
+    <ul class="second-nav">
+        <li class="qwe"><a href="#"><i onclick="close1()" class="fa fa-backspace"></i></a></li>
+        <li><a onclick="home()" href="#">Home</a></li>
+        <li><a onclick="QR()" href="#">QR Code</a></li>
+        <li><a onclick="log()" href="#">Send OTP</a></li>
+    </ul>
+</nav>
+
+
+
+
+
+
+
+
+ 
+    <div class="container">
+        <div class="card">
+            <div class="card-info">
+                <h1>Login Your Email ID</h1>
+            </div>
+          <input class="input" type="Number" placeholder="Enter Your Phone Number">
+          <input class="input" id="password" type="password" placeholder="Enter Your Create Password">
+                <input type="checkbox" id="showPassword" value="show"><b>Show</b>
+       <button id="nxt"> Send OTP </button>  
+       
+                 <div class="custom">
+                      
+      <input class="otp-box" type="number">
+      <input class="otp-box" type="number">
+      <input class="otp-box" type="number">
+      <input class="otp-box" type="number">
+      <input class="otp-box" type="number">
+      <input class="otp-box" type="number">
+                    </div>
+                </div>                                
+          <button id="submit">Submit</button>
+        
+        </div>
+        
+    </div>
+    <div class="card2">
+        
+        <img id="img" src="/storage/emulated/0/DCIM/gzxka-1699954431638.png" alt=""></img>
+        <h4>Scan QR and Pay Your Fee </h4>
+        <button id="show-btn">Show QR</button>
+        <button id="login">Login</button>
+    </div>
+    
+<div class="card3-col">    
+    <div id="card3">
+        <h1 class="last-txt">Thankyou For Visit );</h1><br><br>
+        <button type="reset" class="last-btn">HOME</button>
+    </div>
+ </div>
+
+
+
+<div class="OTP-BOX">   
+        <div class="col">
+            <span id="text-1">0</span>
+        </div>
+        <div class="col">
+            <span id="text-2">0</span>
+        </div>
+        <div class="col">
+            <span id="text-3">0</span>
+        </div>
+        <div class="col">
+            <span id="text-4">0</span>
+        </div>
+        <div class="col">
+            <span id="text-5">0</span>
+        </div>
+        <div class="col">
+            <span id="text-6">0</span>         
+        </div>
+</div>
+    <button id="close">X</button>
+    
+    
+</div>
+</form>
+
+</body>
+<script ondblclick="">
+    
+
+    function hide(){
+   const hide = document.querySelector('.second-nav');
+            hide.style.right = '0';
+document.querySelector('#icon1').style.display = 'none';
+    }
+    function close1(){
+        const hide = document.querySelector('.second-nav');
+            hide.style.right = '-1000px';
+document.querySelector('#icon1').style.display = 'block';
+    }
+    
+    
+    
+        /* Targeting All Required Elements.*/
+ let nxtBtn = document.querySelector('#nxt');
+ let showBtn = document.querySelector('#show-btn');
+ let loginBtn = document.querySelector('#login');
+ let qrImg = document.querySelector('#img');
+ let Last = document.querySelector('.card3-col');
+ let lastBtn = document.querySelector('.last-btn'); 
+ let passwordInput = document.getElementById('password');
+ let showPasswordCheckbox = document.getElementById('showPassword');
+ let Card1 = document.querySelector('.card'); 
+ let Card2 = document.querySelector('.card2');
+ let Txt1 = document.querySelector('#text-1');
+    let Txt2 = document.querySelector('#text-2');
+    let Txt3 = document.querySelector('#text-3');
+    let Txt4 = document.querySelector('#text-4');
+    let Txt5 = document.querySelector('#text-5');
+    let Txt6 = document.querySelector('#text-6');
+let otpContainer =  document.querySelector('.OTP-BOX');
+let closeBtn = document.querySelector('#close');
+let submitBtn= document.querySelector('#submit');
+let otpBox = document.querySelector('.custom');
+ 
+
+      /* Functional Java Script Code  */
+ nxtBtn.addEventListener('click',()=>{
+   otpContainer.style.marginTop = '0';
+   closeBtn.style.marginTop = '0';
+   Txt1.innerHTML = random();
+   Txt2.innerHTML = random();
+   Txt3.innerHTML = random();
+   Txt4.innerHTML = random();
+   Txt5.innerHTML = random();
+   Txt6.innerHTML = random();
+   submitBtn.style.display = 'block';
+   otpBox.style.marginTop = "20px";
+   nxtBtn.style.opacity = '0';
+ });
+ 
+ nxtBtn.addEventListener('dblclick',()=>{
+   otpContainer.style.marginTop = '0';
+   closeBtn.style.marginTop = '0';
+   Txt1.innerHTML = random();
+   Txt2.innerHTML = random();
+   Txt3.innerHTML = random();
+   Txt4.innerHTML = random();
+   Txt5.innerHTML = random();
+   Txt6.innerHTML = random();
+   submitBtn.style.display = 'block';
+   otpBox.style.marginTop = "20px";
+   nxtBtn.style.opacity = '0';
+ });
+ 
+ submitBtn.addEventListener('click',()=>{
+     Card2.style.display = 'block';
+     Card1.style.display = 'none'; 
+     submitBtn.style.display = 'none';
+ });
+    
+ 
+ closeBtn.addEventListener('click',()=>{
+      otpContainer.style.marginTop = '-1000px';
+   closeBtn.style.marginTop = '-1000px';
+ });
+ 
+ showBtn.addEventListener('click',()=>{
+     qrImg.style.filter = 'blur(0)';
+ });
+ 
+ loginBtn.addEventListener('click',()=>{
+    var x =  prompt('Enter Your Registration Token Number');
+     if (x =='ABCD2017') {
+         alert('Login Successfull');
+         Card2.style.display = 'none';
+         Last.style.display = 'block'
+     }
+  else{
+         alert('WRONGE TOKEN NUMBER');
+     }
+ });
+ 
+lastBtn.addEventListener('click',()=>{
+    Card1.style.display = 'block';
+    Last.style.display = 'none';
+    otpBox.style.marginTop = "-1000px";
+    nxtBtn.style.opacity = '1';
+    });
+        showPasswordCheckbox.addEventListener('change', function()  {
+      passwordInput.type = this.checked ? 'text' : 'password';
+    }); 
+
+ function random() {
+        var num = '0123456789';
+        var otp = '';
+        for (i = 0; i < 1; i++) {
+         otp += num[Math.floor(Math.random()*9)]
+        }
+        return otp;
+    }
+    
+    function home() {
+        Card1.style.display = 'block';
+        Card2.style.display = 'none';
+        Last.style.display = 'none';
+        nxtBtn.style.display = 'block';
+        nxtBtn.style.opacity = '1';
+        nxtBtn.style.marginTop = '160px';
+        nxtBtn.style.marginLeft = '230px';
+        otpContainer.style.display = 'none';
+        closeBtn.style.display = 'none';
+        otpBox.style.display = 'none';
+        submitBtn.style.display = 'none';
+    }
+    
+    function QR() {
+        Card1.style.display = 'none';
+        Card2.style.display = 'block';
+        Last.style.display = 'none';
+        nxtBtn.style.display = 'none';
+        nxtBtn.style.opacity = '1';
+        nxtBtn.style.marginTop = '160px';
+        nxtBtn.style.marginLeft = '230px';
+        otpContainer.style.display = 'none';
+        closeBtn.style.display = 'none';
+        otpBox.style.display = 'none';
+        submitBtn.style.display = 'none';
+    }
+    
+ 
+   function log() {
+   otpContainer.style.marginTop = '0';
+   closeBtn.style.marginTop = '0';
+   Txt1.innerHTML = random();
+   Txt2.innerHTML = random();
+   Txt3.innerHTML = random();
+   Txt4.innerHTML = random();
+   Txt5.innerHTML = random();
+   Txt6.innerHTML = random();
+   submitBtn.style.display = 'block';
+   otpBox.style.marginTop = "20px";
+   nxtBtn.style.opacity = '0';
+   Card1.style.display = 'block'
+   Card2.style.display = 'none';
+   Last.style.display = 'none';
+   }
+   
+
+
+    
+
+</script>
+</html>
